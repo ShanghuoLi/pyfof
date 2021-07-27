@@ -1,7 +1,7 @@
 # pyfof
 python-based friend-of-friend algorithm 
 
-You can simply run pyfof.py with the ipython
+You can simply run the pyfof.py in the ipython
 
 > from pyfof.py import fof 
 > 
