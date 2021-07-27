@@ -3,13 +3,13 @@ python-based friend-of-friend algorithm
 
 You can simply run pyfof.py with the ipython
 
-> from pyfof.py import fof
-> res = fof(fitsname='./test_for_pyfof.fits', compt=3, I0=0.04, dr=0.023, dv=3, num_min=150, dist=1300, advel=False, plot=True)
+>>from pyfof.py import fof
+>>res = fof(fitsname='./test_for_pyfof.fits', compt=3, I0=0.04, dr=0.023, dv=3, num_min=150, dist=1300, advel=False, plot=True)
 Then, you can save the results to the pick files.
-> output = 'pyfof_results.p'
-> pickle.dump(res.grp,open('grp_'+output,'wb'))
-> pickle.dump(res.iso,open('iso_'+output,'wb'))
-> pickle.dump(res.iso1,open('iso1_'+output,'wb'))
+>>output = 'pyfof_results.p'
+>>pickle.dump(res.grp,open('grp_'+output,'wb'))
+>>pickle.dump(res.iso,open('iso_'+output,'wb'))
+>>pickle.dump(res.iso1,open('iso1_'+output,'wb'))
 
 '''
 fname: fits file name. 
