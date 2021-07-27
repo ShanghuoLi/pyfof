@@ -1,5 +1,5 @@
 # pyfof
-python-based friend-of-friend algorithm 
+python-based friend-of-friend algorithm to identify the filament in the position-position-velocity space. 
 
 You can simply run the pyfof.py in the ipython
 
