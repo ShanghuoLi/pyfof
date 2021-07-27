@@ -7,7 +7,7 @@ You can simply run pyfof.py with the ipython
 > 
 > res = fof(fitsname='./test_for_pyfof.fits', compt=3, I0=0.04, dr=0.023, dv=3, num_min=150, dist=1300, advel=False, plot=True) 
 > 
-> Then, you can save the results to the pick files.
+Then, you can save the results to the pick files.
 > 
 > output = 'pyfof_results.p' 
 >
@@ -17,7 +17,7 @@ You can simply run pyfof.py with the ipython
 > 
 > pickle.dump(res.iso1,open('iso1_'+output,'wb')) 
 
-'''
+
 fname: fits file name. 
 
 compt: velocity components. 
@@ -36,5 +36,5 @@ num_min: minimal number of points in a group such as number of pixels of one bea
 dist [pc]: distance.
 
 plot: plot the 3d scatter. 
-'''
+
 
