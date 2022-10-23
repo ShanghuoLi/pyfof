@@ -90,14 +90,14 @@ class fof(object):
         if self.advel == True:
             sigtot = img[self.compt*2:self.compt*3,:,:]
 
-            sig = []  # list of points [ra,dec,sigma]
+            sig = []  # list of points [sigma]
             for i in range(s[1]):
                 for j in range(s[2]):
                     for si in sigtot[:,i,j]:
                         if not np.isnan(si):
                             sig.append([si])
 
-        tmap = []
+        tmap = [] #list of points [dec,ra,sigma]
         for i in range(s[1]):
             for j in range(s[2]):
                 for v in vtot[:,i,j]:
@@ -108,7 +108,7 @@ class fof(object):
         nvlsr = np.where( Itot > self.I0, vtot, np.nan)
 
         # change the type of img to list
-        lop = []  # list of points [ra,dec,v]
+        lop = []  # list of points [dec,ra,v]
         rdlop = []
         for i in range(s[1]):
             for j in range(s[2]):
@@ -185,7 +185,7 @@ class fof(object):
         ##-----------------------------------------
 
         ## change the type of img to list
-        lop1 = []  # list of points [ra,dec,v]
+        lop1 = []  # list of points [dec,ra,v]
         rdlop1 = []
         #Ilop1 = []
         for i in range(s[1]):
@@ -358,7 +358,7 @@ class fof(object):
             n_iso[i] = len(iso[i])
             N_iso += len(iso[i])
 
-        loppp = []  # list of points [ra,dec,v]
+        loppp = []  # list of points [dec,ra,v]
         for i in range(s[1]):
             for j in range(s[2]):
                 for v in img[self.compt:self.compt*2,i,j]:
