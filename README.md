@@ -18,14 +18,21 @@ Then, you can manually save the results to the pick files.
 > pickle.dump(res.iso1,open('iso1_'+output,'wb')) 
 
 
-fname: fits file name. \\
+fname: fits file name. 
+
 The fits file must be saved in this way (let's say you have two velocity components): 
-plane0: intenisty of the first velocity componment \\
-plane1: intenisty of the second velocity componment \\
-plane2: velocity of the first velocity componment \\
-plane3: velocity of the second velocity componment \\
-plane4: linewidth of the first velocity componment \\
-plane5: linewidth of the second velocity componment \\
+
+plane0: intenisty of the first velocity componment 
+
+plane1: intenisty of the second velocity componment 
+
+plane2: velocity of the first velocity componment 
+
+plane3: velocity of the second velocity componment 
+
+plane4: linewidth of the first velocity componment 
+
+plane5: linewidth of the second velocity componment 
 
 compt: velocity components. 
 
