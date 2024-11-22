@@ -84,11 +84,11 @@ class fof(object):
         # Find the seed points friends
         #-----------------------------------------
         # change the type of img to list
-        Itot = img[0:self.compt-1,:,:]
-        vtot = img[self.compt:self.compt*2,-1:,:]
+        Itot = img[0:self.compt,:,:]
+        vtot = img[self.compt:self.compt*2,:,:]
 
         if self.advel == True:
-            sigtot = img[self.compt*2:self.compt*3-1,:,:]
+            sigtot = img[self.compt*2:self.compt*3,:,:]
 
             sig = []  # list of points [sigma]
             for i in range(s[1]):
@@ -190,7 +190,7 @@ class fof(object):
         #Ilop1 = []
         for i in range(s[1]):
             for j in range(s[2]):
-                for v in img[self.compt:self.compt*2-1,i,j]:
+                for v in img[self.compt:self.compt*2,i,j]:
                     if not np.isnan(v):
                         lop1.append([i,j,v])
                         rdlop1.append([i,j])
